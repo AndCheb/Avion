@@ -1,0 +1,114 @@
+.scroll-none {
+  overflow: hidden;
+  touch-action: none;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu__link {
+  color: #000;
+  text-decoration: none;
+}
+
+.menu__button {
+  position: relative;
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 1;
+  margin-left: auto;
+  width: 30px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.menu__button::before,
+.menu__button::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+
+.menu__button::before {
+  top: 0;
+}
+
+.menu__button::after {
+  bottom: 0;
+}
+
+.menu__icon {
+  width: 80%;
+  height: 2px;
+  transform: scale(1);
+  background-color: #000;
+}
+
+.menu__button.menu__button--active .menu__icon {
+  transform: scale(0);
+}
+
+.menu__button.menu__button--active::before {
+  top: 50%;
+  transform: rotate(-45deg) translateY(-50%);
+}
+
+.menu__button.menu__button--active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translateY(50%);
+}
+
+@keyframes burgerAnimation {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@media (max-width: 900px) {
+  .menu__button {
+    display: flex;
+  }
+
+  .menu__nav {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    padding: 50px 40px;
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+    overflow-y: auto;
+    animation: burgerAnimation 0.4s;
+    box-sizing: border-box;
+  }
+
+  .menu__nav--open {
+    display: flex;
+  }
+
+  .menu__list {
+    flex-wrap: nowrap;
+    row-gap: 30px;
+  }
+}
