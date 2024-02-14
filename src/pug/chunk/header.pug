@@ -1,4 +1,22 @@
-header
+header.header
   .header__wrapper
-  
-    | header
+
+    .header__top
+
+      form.header__form(action="#")
+        input(list="goods")
+
+        datalist(id="goods")
+          option(value="Ceramics")
+          option(value="Tables")
+          option(value="Chairs")
+          option(value="Crockery")
+
+      img.header__logo(src="./img/svg/logo.svg" alt="logotype." width="65" height="30")
+
+      a.header__cart(href="#!" aria-label="cart goods.") cart
+
+      button(type="button" aria-label="personal area.") account
+
+
+    include ./../../libs/burger-2/burger.pug
