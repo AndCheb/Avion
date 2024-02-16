@@ -34,18 +34,25 @@
 .burger__close {
   display: none;
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 15px;
+  margin: 0;
+  padding: 0;
   width: 45px;
   height: 45px;
   background-color: transparent;
+  border: none;
 }
 
 .burger__open {
   display: none;
-  width: 45px;
-  height: 45px;
+  margin: 0;
+  padding: 0;
+  padding-top: 3px;
+  width: 32px;
+  height: 32px;
   background-color: transparent;
+  border: none;
 }
 
 .burger__overlay {
@@ -59,7 +66,7 @@
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .burger {
     position: fixed;
     top: 0;
@@ -82,13 +89,18 @@
     overflow-y: auto;
   }
 
+  .burger__link {
+    padding: 5px;
+  }
+
   .burger--visible {
     transform: none;
   }
 
   .burger__open {
-    display: block;
-    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .burger__close {

@@ -1,4 +1,4 @@
-@import ' ./../../libs/burger-2/burger.scss';
+@import ' ./../../libs/burger2/burger.scss';
 
 .header__wrapper {
   display: flex;
@@ -53,6 +53,7 @@
 }
 
 .header__cart {
+  margin-right: 4px;
   min-width: 16px;
   min-height: 16px;
   background-image: url('./../img/svg/cart.svg');
@@ -78,4 +79,56 @@
 .header__cart:hover,
 .header__account:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+  .header__wrapper {
+    flex-direction: row;
+    padding-block: 20px;
+  }
+
+  .header__top {
+    grid-template-columns: 1fr 200px 32px 32px;
+    padding: 0;
+    width: 100%;
+    border: none;
+  }
+
+  .header__form {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    flex-direction: row-reverse;
+    margin-right: 12px;
+  }
+
+  .header__logo {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    padding: 0;
+    text-align: start;
+  }
+
+  .header__account {
+    margin-right: 6px;
+  }
+}
+
+@media (max-width: 470px) {
+  .header__top {
+    grid-template-columns: 1fr 1fr 32px 32px;
+  }
+
+  .header__search {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 385px) {
+  .header__top {
+      grid-template-columns: 1fr 32px 32px;
+  }
+
+  .header__form {
+    display: none;
+  }
 }
