@@ -23,10 +23,10 @@ export default () => {
       })
     )
     .pipe(newer(path.img.dest))
-    .pipe(webp())
-    .pipe(dest(path.img.dest))
-    .pipe(src(path.img.src))
-    .pipe(newer(path.img.dest))
+    .pipe(gulpIf(app.isProd, webp()))
+    .pipe(gulpIf(app.isProd, dest(path.img.dest)))
+    .pipe(gulpIf(app.isProd, src(path.img.src)))
+    .pipe(gulpIf(app.isProd, newer(path.img.dest)))
     .pipe(gulpIf(app.isProd, imagemin(app.imagemin)))
     .pipe(dest(path.img.dest));
 };

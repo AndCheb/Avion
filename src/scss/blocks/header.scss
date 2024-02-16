@@ -1,6 +1,81 @@
+@import ' ./../../libs/burger-2/burger.scss';
+
 .header__wrapper {
+  display: flex;
+  flex-direction: column;
   margin-inline: auto;
   padding-inline: 25px;
   max-width: min(1385px, 100%);
   box-sizing: content-box;
+}
+
+.header__top {
+  display: grid;
+  grid-template-columns: 200px 1fr 32px 32px;
+  align-items: center;
+  padding-top: 23px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header__form {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.header__label {
+  min-width: 16px;
+  min-height: 16px;
+  background-image: url('./../img/svg/search.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+}
+
+.header__search {
+  border: none;
+  height: 32px;
+}
+
+.header__search::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+
+.header__logo {
+  padding-right: 140px;
+  text-align: center;
+}
+
+.header__cart,
+.header__account {
+  padding-block: 16px;
+}
+
+.header__cart {
+  min-width: 16px;
+  min-height: 16px;
+  background-image: url('./../img/svg/cart.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+  transition: transform 0.2s ease;
+}
+
+.header__account {
+  min-width: 16px;
+  min-height: 16px;
+  background-image: url('./../img/svg/avatar.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.header__cart:hover,
+.header__account:hover {
+  transform: scale(1.1);
 }

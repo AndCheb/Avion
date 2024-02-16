@@ -4,19 +4,21 @@ header.header
     .header__top
 
       form.header__form(action="#")
-        input(list="goods")
+        label.header__label(for="list")
+        input.header__search(list="goods" id="list" aria-label="Search goods.")
 
-        datalist(id="goods")
+        datalist.header__datalist(id="goods")
           option(value="Ceramics")
           option(value="Tables")
           option(value="Chairs")
           option(value="Crockery")
 
-      img.header__logo(src="./img/svg/logo.svg" alt="logotype." width="65" height="30")
+      .header__logo
+        img.header__img(src="./img/svg/logo.svg" alt="Logotype." width="65" height="30")
 
-      a.header__cart(href="#!" aria-label="cart goods.") cart
+      a.header__cart(href="#!" aria-label="Cart goods.")
 
-      button(type="button" aria-label="personal area.") account
+      button.header__account(type="button" aria-label="Personal area.")
 
 
     include ./../../libs/burger-2/burger.pug

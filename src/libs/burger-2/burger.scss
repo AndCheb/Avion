@@ -5,12 +5,30 @@
 
 .burger {
   position: relative;
+  margin-inline: auto;
 }
 
 .burger__list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 50px;
+  column-gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.burger__link {
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+  color: var(--color-menu-text);
+  transition: color 0.3s ease;
+}
+
+@media (any-hover: hover) {
+  .burger__link:hover {
+    color: var(--color-menu-text-hover);
+  }
 }
 
 .burger__close {
