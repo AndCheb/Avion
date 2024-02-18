@@ -1,4 +1,4 @@
-import burger from './../libs/burger2/burger.js';
+import burger from './module/burger.js';
 import account from './module/account.js';
 
 burger();

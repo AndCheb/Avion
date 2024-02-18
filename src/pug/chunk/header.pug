@@ -18,19 +18,19 @@ header.header
 
       a.header__cart(href="#!" aria-label="Cart goods.")
 
-      .header__account
-        button.header__button(type="button" aria-label="Personal area.")
+      .account
+        button.account__button(type="button" aria-label="Personal area.")
 
-        .header__log
-          form.header__login(action="#")
+        .account__log
+          form.account__login(action="#")
             label Login
-              input.header__name(type="text" minlength="3" maxlength="7")
+              input.account__name(type="text" minlength="3" maxlength="7")
             label Password
-              input.header__password(type="password")
-            button.header__enter(type="button") LogIn
-          form.header__log-out.display-none(action="#")
-            span.header__account-name
-            span.header__wallet Wallet: 1000$
-            button.button-loguot(type="button") LogUot
+              input.account__password(type="password")
+            button.account__enter(type="button") LogIn
+          form.account__logout.display-none(action="#")
+            span.account__text
+            span.account__wallet Wallet: 1000$
+            button.account__exit(type="button") LogUot
 
-    include ./../../libs/burger2/burger.pug
+    include ./burger.pug

@@ -1,30 +1,30 @@
-const form = document.querySelector('.header__login');
-const exit = document.querySelector('.header__log-out');
-const account = document.querySelector('.header__button');
-const login = document.querySelector('.header__name');
-const password = document.querySelector('.header__password');
-const enter = document.querySelector('.header__enter');
-const accountName = document.querySelector('.header__account-name');
-const loguot = document.querySelector('.button-loguot');
+const accountLogin = document.querySelector('.account__login');
+const accountLoguot = document.querySelector('.account__logout');
+const account = document.querySelector('.account__button');
+const accountInputName = document.querySelector('.account__name');
+const accountPassword = document.querySelector('.account__password');
+const accountButtonEnter = document.querySelector('.account__enter');
+const accountText = document.querySelector('.account__text');
+const accountExit = document.querySelector('.account__exit');
 
 export default function () {
   account.addEventListener('click', () => {
-    login.focus();
+    accountInputName.focus();
   });
 
-  enter.addEventListener('click', () => {
-    if (login.value.length >= 3 && password) {
-      form.classList.add('display-none');
-      exit.classList.remove('display-none');
-      accountName.textContent = login.value;
-      account.classList.add('header__button--active');
+  accountButtonEnter.addEventListener('click', () => {
+    if (accountInputName.value.length >= 3 && accountPassword) {
+      accountLogin.classList.add('display-none');
+      accountLoguot.classList.remove('display-none');
+      accountText.textContent = accountInputName.value;
+      account.classList.add('account__button--active');
     }
   });
 
-  loguot.addEventListener('click', () => {
-    form.classList.remove('display-none');
-    exit.classList.add('display-none');
-    accountName.textContent = '';
-    account.classList.remove('header__button--active');
+  accountExit.addEventListener('click', () => {
+    accountLogin.classList.remove('display-none');
+    accountLoguot.classList.add('display-none');
+    accountText.textContent = '';
+    account.classList.remove('account__button--active');
   });
 }
