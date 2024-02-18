@@ -7,24 +7,53 @@ const accountButtonEnter = document.querySelector('.account__enter');
 const accountText = document.querySelector('.account__text');
 const accountExit = document.querySelector('.account__exit');
 
+function toggleState() {
+  accountLogin.classList.toggle('display-none');
+  accountLoguot.classList.toggle('display-none');
+  account.classList.toggle('account__button--active');
+}
+
 export default function () {
   account.addEventListener('click', () => {
     accountInputName.focus();
   });
 
   accountButtonEnter.addEventListener('click', () => {
-    if (accountInputName.value.length >= 3 && accountPassword) {
-      accountLogin.classList.add('display-none');
-      accountLoguot.classList.remove('display-none');
+    if (
+      accountInputName.value.length >= 3 &&
+      accountPassword.value.length > 4
+    ) {
       accountText.textContent = accountInputName.value;
-      account.classList.add('account__button--active');
+      toggleState();
     }
   });
 
   accountExit.addEventListener('click', () => {
-    accountLogin.classList.remove('display-none');
-    accountLoguot.classList.add('display-none');
     accountText.textContent = '';
-    account.classList.remove('account__button--active');
+    toggleState();
   });
+
+  accountPassword.addEventListener('keypress', (e) => {
+    if (
+      accountInputName.value.length > 3 &&
+      accountPassword.value.length > 4 &&
+      e.code === 'Enter'
+    ) {
+      accountText.textContent = accountInputName.value;
+      toggleState();
+    }
+  });
+
+  accountInputName.addEventListener('keypress', (e) => {
+    if (
+      accountInputName.value.length > 3 &&
+      accountPassword.value.length > 4 &&
+      e.code === 'Enter'
+    ) {
+      accountText.textContent = accountInputName.value;
+      toggleState();
+    }
+  });
+
+
 }
