@@ -2,9 +2,12 @@
 @import './global/root.scss';
 @import './global/box-model.scss';
 
+@import './blocks/overall/index.scss';
+@import './blocks/wrapper.scss';
 @import './blocks/page.scss';
 
 @import './blocks/header/index.scss';
+@import './blocks/hero/index.scss';
 
 @import './blocks/footer.scss';
 @import './blocks/common.scss';

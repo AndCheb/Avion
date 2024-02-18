@@ -1,0 +1,43 @@
+@media (max-width: 950px) {
+  .hero__info {
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 455px) {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    // padding-top: 0;
+
+    &__background {
+      position: static;
+      width: 100%;
+      height: var(--455_305-320_200);
+    }
+
+    &__info {
+      padding-inline: 0;
+    }
+
+    &__link {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .hero__info {
+    padding-top: 0;
+  }
+
+  .hero__title,
+  .hero__subtitle {
+    text-align: center;
+  }
+
+  .hero__title {
+    margin-bottom: 10px;
+  }
+}

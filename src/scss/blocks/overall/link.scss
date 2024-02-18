@@ -1,0 +1,18 @@
+.link {
+  display: inline-block;
+  padding-block: 1em;
+  padding-inline: 2em;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-link);
+  background-color: var(--color-link-space);
+  transition: background 0.3s ease;
+}
+
+@media (any-hover: hover) {
+  .link:hover {
+    background-color: var(--color-link-hover);
+  }
+}

@@ -1,0 +1,37 @@
+.hero {
+  position: relative;
+  padding-block: var(--1280_130-320_35);
+
+  &__background {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: url('./../img/background/hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__info {
+    margin-left: auto;
+    padding-block: var(--1280_50-390_35);
+    padding-inline: var(--1280_60-390_25);
+    max-width: 630px;
+    background-color: #fff;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: var(--color-main-title)
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: var(--1280_155-320_30);
+    font-weight: 400;
+    font-size: var(--1280_18-320_14);
+    line-height: 150%;
+    text-wrap: balance;
+    color: #5b5676;
+  }
+}

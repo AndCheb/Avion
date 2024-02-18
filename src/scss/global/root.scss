@@ -1,20 +1,29 @@
 :root {
-  --font-family: "Satoshi", sans-serif;
-  --second-family: "Clash Display", sans-serif;
+  --font-family: 'Satoshi', sans-serif;
+  --second-family: 'Clash Display', sans-serif;
 
   --wrapper-padding: 25px;
   --wrapper-width: 1280px;
 
-  --dark-primary: #2a254b;
-	--primary: #4e4d93;
-	--light-grey: #f9f9f9;
-	--border-grey: #ebe8f4;
-	--white: #fff;
-	--border-dark: #cac6da;
-	--images---dark-chair: #f6f6f6;
+  --blue-dark: #2a254b;
+  --light-gray-primary: #f9f9f9;
+  --light-gray-secondary: #ececec;
+  --deep-blue: #22202e;
+  --light-lilac: #726e8d;
 
-  --color-menu-text: #726e8d;
-  --color-menu-text-hover: #22202e;
-  --color-account-form: var(--light-grey);
-	--color-avatar-active: #2eba04;
+  --color-menu-text: var(--light-lilac);
+  --color-menu-text-hover: var(--deep-blue);
+  --color-account-form: var(--light-gray-primary);
+  --color-main-title: var(--deep-blue);
+  --color-link: var(--blue-dark);
+  --color-link-space: var(--light-gray-primary);
+  --color-link-hover: var(--light-gray-secondary);
+
+  --1280_130-320_35: clamp(2.188rem, 0.208rem + 9.9vw, 8.125rem);
+  --1280_155-320_30: clamp(1.875rem, -0.729rem + 13.02vw, 9.688rem);
+  --1280_60-390_25: clamp(1.563rem, 0.604rem + 3.93vw, 3.75rem);
+  --1280_50-390_35: clamp(2.188rem, 1.777rem + 1.69vw, 3.125rem);
+  --1280_32-320_19: clamp(1.188rem, 0.917rem + 1.35vw, 2rem);
+  --1280_18-320_14: clamp(0.875rem, 0.792rem + 0.42vw, 1.125rem);
+  --455_305-320_200: clamp(12.5rem, -3.056rem + 77.78vw, 19.063rem);
 }
