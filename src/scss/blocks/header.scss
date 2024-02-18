@@ -48,14 +48,14 @@
 }
 
 .header__cart,
-.header__account {
+.header__button {
   padding-block: 16px;
 }
 
 .header__cart {
   margin-right: 4px;
-  min-width: 16px;
-  min-height: 16px;
+  min-width: 32px;
+  min-height: 32px;
   background-image: url('./../img/svg/cart.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -64,8 +64,12 @@
 }
 
 .header__account {
-  min-width: 16px;
-  min-height: 16px;
+  position: relative;
+}
+
+.header__button {
+  min-width: 32px;
+  min-height: 32px;
   background-image: url('./../img/svg/avatar.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -76,9 +80,47 @@
   transition: transform 0.3s ease;
 }
 
+.header__button--active {
+  background-image: url('./../img/svg/active.svg');
+}
+
+.header__log {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 35px;
+  right: 0;
+  width: 200px;
+  height: 150px;
+  background-color: var(--color-account-form);
+  box-shadow: -12px 12px 18px -13px rgba(0,0,0,0.75);
+}
+
+.header__login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+  padding: 15px;
+}
+
+.header__log-out {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+
 .header__cart:hover,
-.header__account:hover {
+.header__button:hover {
   transform: scale(1.1);
+}
+
+.header__account:focus-within .header__log {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 800px) {
@@ -108,7 +150,7 @@
     text-align: start;
   }
 
-  .header__account {
+  .header__button {
     margin-right: 6px;
   }
 }

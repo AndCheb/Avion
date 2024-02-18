@@ -1,11 +1,11 @@
-export default function () {
-  const body = document.querySelector('.page__body');
-  const burger = document.querySelector('.burger');
-  const burgerOveraly = document.querySelector('.burger__overlay');
-  const burgerOpenButton = document.querySelector('.burger__open');
-  const burgerCloseButton = document.querySelector('.burger__close');
-  const burgerLinks = document.querySelectorAll('.burger__link');
+const body = document.querySelector('.page__body');
+const burger = document.querySelector('.burger');
+const burgerOveraly = document.querySelector('.burger__overlay');
+const burgerOpenButton = document.querySelector('.burger__open');
+const burgerCloseButton = document.querySelector('.burger__close');
+const burgerLinks = document.querySelectorAll('.burger__link');
 
+export default function () {
   const burgerOpen = () => {
     body.classList.add('scroll-none');
     burger.classList.add('burger--visible');
