@@ -1,0 +1,63 @@
+.advantages {
+  padding-block: 80px;
+
+  &__title {
+    margin-bottom: 36px;
+    font-size: var(--1280_24-320_20);
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: var(--1280_50-990_30);
+    padding-top: 85px;
+    max-width: 305px;
+    background-color: var(--color-card);
+    background-repeat: no-repeat;
+    background-position: var(--1280_50-990_30) 50px;
+    background-size: 24px 24px;
+  }
+
+  &__item:first-child {
+    background-image: url('./../img/svg/delivery.svg');
+  }
+
+  &__item:nth-child(2) {
+    background-image: url('./../img/svg/checkmark.svg');
+  }
+
+  &__item:nth-child(3) {
+    background-image: url('./../img/svg/purchase.svg');
+  }
+
+  &__item:nth-child(4) {
+    background-image: url('./../img/svg/cart.svg');
+  }
+
+  &__head {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: var(--color-card-text);
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--color-card-text);
+  }
+}

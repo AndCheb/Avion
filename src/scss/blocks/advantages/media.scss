@@ -1,0 +1,29 @@
+@media (max-width: 990px) {
+  .advantages {
+    &__list {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      min-width: 40%;
+      padding-top: 60px;
+      background-position-y: 25px;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .advantages {
+    padding-block: 50px;
+
+    &__item {
+      min-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .advantages {
+    padding-top: 0;
+  }
+}
