@@ -1,0 +1,49 @@
+.collection {
+  margin-bottom: var(--1280_50-990_30);
+
+  &__swiper {
+    padding-top: var(--1280_30-320_0);
+    padding-bottom: var(--1280_50-390_35);
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    max-width: var(--1280_305-320_230);
+  }
+
+  &__image {
+    margin-bottom: 25px;
+    width: 100%;
+    height: auto;
+  }
+
+  &__href {
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    font-size: 20px;
+    line-height: 140%;
+    text-decoration: none;
+    color: var(--color-card-text);
+  }
+
+  &__price {
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-card-text);
+  }
+
+  &__view {
+    display: block;
+    margin-inline: auto;
+    max-width: 170px;
+  }
+}
+
+@media (any-hover: hover) {
+  .collection__link:hover {
+    text-decoration: underline;
+  }
+}
