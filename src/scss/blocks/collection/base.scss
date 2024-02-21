@@ -25,8 +25,9 @@
   &__link {
     font-size: 20px;
     line-height: 140%;
-    text-decoration: none;
+    text-decoration-color: transparent;
     color: var(--color-card-text);
+    transition: text-decoration 0.3s ease;
   }
 
   &__price {
@@ -44,6 +45,6 @@
 
 @media (any-hover: hover) {
   .collection__link:hover {
-    text-decoration: underline;
+    text-decoration-color: inherit;
   }
 }
