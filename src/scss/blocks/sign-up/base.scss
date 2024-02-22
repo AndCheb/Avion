@@ -1,0 +1,25 @@
+.sign-up {
+  display: flex;
+  width: min(100%, 475px);
+
+  &__input {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    width: 100%;
+    min-height: 56px;
+
+    padding-block: 15px;
+    padding-inline: var(--1280_30-320_15);
+
+    font-family: inherit;
+    font-size: 100%;
+
+    background-color: var(--color-background-tertiary);
+
+    border: none;
+    border-radius: 0;
+
+    appearance: none;
+  }
+}
