@@ -1,0 +1,49 @@
+.idea {
+  padding-block: var(--1280_60-390_25);
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+  }
+
+  &__info,
+  &__swiper {
+    width: min(49%, 630px);
+    max-height: 478px;
+    flex-shrink: 0;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: var(--1280_50-990_30);
+    background-color: var(--color-background-primary);
+    overflow-x: auto;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    color: var(--color-text-primary);
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 55px;
+    color: var(--color-text-primary);
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__link {
+    margin-top: auto;
+  }
+}
+
+@import './../../node_modules/swiper/modules/effect-fade.scss'

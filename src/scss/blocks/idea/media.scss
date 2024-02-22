@@ -1,0 +1,35 @@
+@media (max-width: 630px) {
+  .idea {
+    &__content {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
+    &__info,
+    &__swiper {
+      width: 100%;
+      min-height: var(--630_350-320_250);
+    }
+
+    &__image {
+      display: block;
+      height: var(--630_350-320_250);
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .idea {
+    &__info {
+      align-items: stretch;
+    }
+
+    &__title {
+      font-size: 17px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+    }
+  }
+}
