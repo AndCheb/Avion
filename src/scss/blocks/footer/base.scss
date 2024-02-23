@@ -1,0 +1,85 @@
+.footer {
+  background-color: var(--color-background-primary);
+
+  &__content {
+    padding-top: var(--1280_60-390_25);
+    padding-bottom: 25px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: var(--1280_50-390_35);
+    column-gap: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  &__refers {
+    display: flex;
+    column-gap: 45px;
+    width: min(100%, 540px);
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: var(--color-text-primary);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    margin: 0;
+    padding: 0;
+    min-width: 125px;
+    list-style-type: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    transition: color 0.3s ease;
+  }
+
+  &__form {
+    width: min(100%, 630px);
+  }
+
+  &__basement {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+    padding-block: 20px;
+  }
+
+  &__oficial {
+    font-size: 14px;
+    color: var(--color-text-primary);
+  }
+
+  &__socials {
+    display: flex;
+    column-gap: 25px;
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__href path {
+    transition: fill 0.3s ease;
+  }
+}
+
+@media (any-hover: hover) {
+  .footer__link:hover {
+    color: var(--color-accent-primary);
+  }
+
+  .footer__href:hover path {
+    fill: var(--color-accent-primary);
+  }
+}
