@@ -14,19 +14,15 @@
   --white: #fff;
   --yellow-dark: #d5a962;
 
-  --color-menu-text: var(--light-lilac);
-  --color-menu-text-hover: var(--deep-blue);
-  --color-card: var(--light-gray-primary);
-  --color-main-title: var(--deep-blue);
-  --color-link: var(--blue-dark);
-  --color-link-space: var(--light-gray-primary);
-  --color-link-hover: var(--light-gray-secondary);
-  --color-card-text: var(--blue-dark);
   --color-background-primary: var(--blue-dark);
   --color-background-secondary: var(--fog);
   --color-background-tertiary: var(--white);
+  --color-background-quaternary: var(--light-gray-primary);
+  --color-background-quinary: var(--light-gray-secondary);
   --color-text-primary: var(--white);
   --color-text-secondary: var(--deep-blue);
+  --color-text-tertiary: var(--light-lilac);
+  --color-text-quaternary: var(--blue-dark);
   --color-accent-primary: var(--yellow-dark);
 
   --1280_305-320_230: clamp(14.375rem, 12.813rem + 7.81vw, 19.063rem);

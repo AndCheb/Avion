@@ -7,8 +7,8 @@
   font-size: 16px;
   line-height: 150%;
   text-align: center;
-  color: var(--color-link);
-  background-color: var(--color-link-space);
+  color: var(--color-text-quaternary);
+  background-color: var(--color-background-quaternary);
   transition: background 0.3s ease, color 0.3s ease;
 
   &--fog {
@@ -17,14 +17,14 @@
 
     &:focus {
       color: var(--color-text-secondary);
-      background-color: var(--color-link-hover);
+      background-color: var(--color-background-quinary);
     }
   }
 }
 
 @media (any-hover: hover) {
   .link:hover {
-    background-color: var(--color-link-hover);
+    background-color: var(--color-background-quinary);
   }
 
   .link--fog:hover {

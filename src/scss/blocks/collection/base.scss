@@ -26,14 +26,14 @@
     font-size: 20px;
     line-height: 140%;
     text-decoration-color: transparent;
-    color: var(--color-card-text);
+    color: var(--color-text-quaternary);
     transition: text-decoration 0.3s ease;
   }
 
   &__price {
     font-size: 18px;
     line-height: 150%;
-    color: var(--color-card-text);
+    color: var(--color-text-quaternary);
   }
 
   &__view {

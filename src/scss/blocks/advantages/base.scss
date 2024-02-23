@@ -22,7 +22,7 @@
     padding: var(--1280_50-990_30);
     padding-top: 85px;
     max-width: 305px;
-    background-color: var(--color-card);
+    background-color: var(--color-background-quaternary);
     background-repeat: no-repeat;
     background-position: var(--1280_50-990_30) 50px;
     background-size: 24px 24px;
@@ -50,7 +50,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
-    color: var(--color-card-text);
+    color: var(--color-text-quaternary);
   }
 
   &__text {
@@ -58,6 +58,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    color: var(--color-card-text);
+    color: var(--color-text-quaternary);
   }
 }

@@ -16,13 +16,13 @@
   display: inline-block;
   padding: 20px;
   text-decoration: none;
-  color: var(--color-menu-text);
+  color: var(--color-text-tertiary);
   transition: color 0.3s ease;
 }
 
 @media (any-hover: hover) {
   .burger__link:hover {
-    color: var(--color-menu-text-hover);
+    color: var(--color-text-secondary);
   }
 }
 
@@ -69,7 +69,7 @@
     z-index: 2;
     width: 250px;
     height: 100%;
-    background-color: #fff;
+    background-color: var(--color-background-tertiary);
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
   }
