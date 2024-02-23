@@ -23,3 +23,18 @@
     appearance: none;
   }
 }
+
+.sign-up--dark {
+  width: 100%;
+}
+
+.sign-up__input--dark {
+  background-color: var(--color-background-secondary);
+  flex-grow: 1;
+  color: var(--color-text-primary);
+
+  &::placeholder {
+    color: var(--color-text-primary);
+    opacity: 0.6;
+  }
+}
