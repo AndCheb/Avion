@@ -12,6 +12,7 @@
   --light-lilac: #726e8d;
   --fog: rgba(249, 249, 249, 0.15);
   --white: #fff;
+  --yellow-dark: #d5a962;
 
   --color-menu-text: var(--light-lilac);
   --color-menu-text-hover: var(--deep-blue);
@@ -26,6 +27,7 @@
   --color-background-tertiary: var(--white);
   --color-text-primary: var(--white);
   --color-text-secondary: var(--deep-blue);
+  --color-accent-primary: var(--yellow-dark);
 
   --1280_305-320_230: clamp(14.375rem, 12.813rem + 7.81vw, 19.063rem);
   --1280_130-320_35: clamp(2.188rem, 0.208rem + 9.9vw, 8.125rem);
