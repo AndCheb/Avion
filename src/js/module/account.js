@@ -20,8 +20,8 @@ export default function () {
 
   accountButtonEnter.addEventListener('click', () => {
     if (
-      accountInputName.value.length >= 3 &&
-      accountPassword.value.length > 4
+      accountInputName.value.length &&
+      accountPassword.value.length
     ) {
       accountText.textContent = accountInputName.value;
       toggleState();
@@ -35,8 +35,8 @@ export default function () {
 
   accountPassword.addEventListener('keypress', (e) => {
     if (
-      accountInputName.value.length > 3 &&
-      accountPassword.value.length > 4 &&
+      accountInputName.value.length &&
+      accountPassword.value.length &&
       e.code === 'Enter'
     ) {
       accountText.textContent = accountInputName.value;
@@ -46,8 +46,8 @@ export default function () {
 
   accountInputName.addEventListener('keypress', (e) => {
     if (
-      accountInputName.value.length > 3 &&
-      accountPassword.value.length > 4 &&
+      accountInputName.value.length &&
+      accountPassword.value.length &&
       e.code === 'Enter'
     ) {
       accountText.textContent = accountInputName.value;
