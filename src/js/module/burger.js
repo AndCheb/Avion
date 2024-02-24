@@ -5,25 +5,25 @@ const burgerOpenButton = document.querySelector('.burger__open');
 const burgerCloseButton = document.querySelector('.burger__close');
 const burgerLinks = document.querySelectorAll('.burger__link');
 
-export default function () {
-  const burgerOpen = () => {
-    body.classList.add('scroll-none');
-    burger.classList.add('burger--visible');
-    burgerCloseButton.classList.add('burger__close--visible');
-    burgerOveraly.classList.add('burger__overlay--active');
-    burgerLinks.forEach((item) => {
-      item.addEventListener('click', () => {
-        burgerClose();
-      });
+const burgerOpen = () => {
+  body.classList.add('scroll-none');
+  burger.classList.add('burger--visible');
+  burgerCloseButton.classList.add('burger__close--visible');
+  burgerOveraly.classList.add('burger__overlay--active');
+  burgerLinks.forEach((item) => {
+    item.addEventListener('click', () => {
+      burgerClose();
     });
-  };
+  });
+};
 
-  const burgerClose = () => {
-    body.classList.remove('scroll-none');
-    burger.classList.remove('burger--visible');
-    burgerOveraly.classList.remove('burger__overlay--active');
-  };
+const burgerClose = () => {
+  body.classList.remove('scroll-none');
+  burger.classList.remove('burger--visible');
+  burgerOveraly.classList.remove('burger__overlay--active');
+};
 
+export default function () {
   burgerOpenButton.addEventListener('click', () => {
     burgerOpen();
   });
