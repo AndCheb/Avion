@@ -13,6 +13,16 @@ function toggleState() {
   account.classList.toggle('account__button--active');
 }
 
+function setValue() {
+  localStorage.setItem('nickName', accountInputName.value);
+  accountText.textContent = accountInputName.value;
+}
+
+if (localStorage.getItem('nickName')) {
+  toggleState();
+  accountText.textContent = localStorage.getItem('nickName');
+}
+
 export default function () {
   account.addEventListener('click', () => {
     accountInputName.focus();
@@ -23,12 +33,13 @@ export default function () {
       accountInputName.value.length &&
       accountPassword.value.length
     ) {
-      accountText.textContent = accountInputName.value;
+      setValue();
       toggleState();
     }
   });
 
   accountExit.addEventListener('click', () => {
+    localStorage.removeItem('nickName');
     accountText.textContent = '';
     toggleState();
   });
@@ -39,7 +50,7 @@ export default function () {
       accountPassword.value.length &&
       e.code === 'Enter'
     ) {
-      accountText.textContent = accountInputName.value;
+      setValue();
       toggleState();
     }
   });
@@ -50,7 +61,7 @@ export default function () {
       accountPassword.value.length &&
       e.code === 'Enter'
     ) {
-      accountText.textContent = accountInputName.value;
+      setValue();
       toggleState();
     }
   });
