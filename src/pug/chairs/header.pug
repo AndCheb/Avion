@@ -1,0 +1,37 @@
+header.header
+  .header__wrapper
+
+    .header__top
+
+      form.header__form(action="#")
+        label.header__label(for="list")
+        input.header__search(list="goods" id="list" aria-label="Search goods.")
+
+        datalist.header__datalist(id="goods")
+          option(value="Ceramics")
+          option(value="Tables")
+          option(value="Chairs")
+          option(value="Crockery")
+
+      .header__logo
+        a(href="./index.html")
+          img.header__img(src="./img/svg/logo.svg" alt="Logotype." width="65" height="30")
+
+      a.header__cart(href="#!" aria-label="Cart goods.")
+
+      .account
+        button.account__button(type="button" aria-label="Personal area.")
+
+        .account__log
+          form.account__login(action="#")
+            label.account__label Login
+              input.account__name(type="text" minlength="3" maxlength="7")
+            label.account__label Password
+              input.account__password(type="password")
+            button.account__enter(type="button") Log In
+          form.account__logout.display-none(action="#")
+            span.account__text
+            span.account__wallet Wallet: 1000$
+            button.account__exit(type="button") Log Uot
+
+    include ./burger.pug
