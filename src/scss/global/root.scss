@@ -8,6 +8,7 @@
   --blue-dark: #2a254b;
   --light-gray-primary: #f9f9f9;
   --light-gray-secondary: #ececec;
+  --gray: #505977;
   --deep-blue: #22202e;
   --light-lilac: #726e8d;
   --fog: rgba(249, 249, 249, 0.15);
@@ -23,6 +24,7 @@
   --color-text-secondary: var(--deep-blue);
   --color-text-tertiary: var(--light-lilac);
   --color-text-quaternary: var(--blue-dark);
+  --color-text-quinary: var(--gray);
   --color-accent-primary: var(--yellow-dark);
 
   --1280_305-320_230: clamp(14.375rem, 12.813rem + 7.81vw, 19.063rem);

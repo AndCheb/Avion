@@ -2,49 +2,54 @@ section.envelope
 
   div.wrapper
 
-    img(src="./../img/goods/chair.jpg", alt="Dendy chair." width="610" height="660")
-
     div.envelope__content
 
-      h2.title.envelope__title
-        | The Dandy Chair
+      img(src="./../img/goods/chair.jpg", alt="Dendy chair." width="610" height="660")
 
-      span.envelope__subtitle(aria-label="Goods price.")
-        | £250
+      div.envelope__block
 
-      h3.envelope__main
-       | Description
+        h2.title.envelope__title
+          | The Dandy Chair
 
-      p.envelope__info
-        | A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.
+        span.envelope__subtitle(aria-label="Goods price.")
+          | £250
 
-      ul.envelope__list
-        li.envelope__item
-          | Premium material
-        li
-          | Handmade upholstery
-        li
-          | Quality timeless classic
+        h3.envelope__main
+          | Description
 
-      h3.envelop__main
-        | Dimensions
+        p.envelope__info
+          | A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.
 
-      table.envelop__table
-        thead
-          tr
-            th  Height
-            th Width
-            th Depth
-          tr
-            td 110cm
-            td 75cm
-            td 50cm
+        ul.envelope__list
+          li.envelope__item
+            | Premium material
+          li
+            | Handmade upholstery
+          li
+            | Quality timeless classic
 
-      div.envelop__amount
-        span
-          | Amount:
+        h3.envelope__main
+          | Dimensions
 
-        div.envelop__counter
+        table.table
+          thead.table__head
+            tr.table__row
+              th  Height
+              th Width
+              th Depth
+            tr.table__row
+              td 110cm
+              td 75cm
+              td 50cm
 
-        button.envelope__button(type="button")
-          | Add to cart
+        div.amount(id="chair")
+          span
+            | Amount:
+
+          div.amount__counter
+            button.amount__increase(type="button") +
+            span.amount__total 1
+            button.amount__decrease(type="button") -
+
+          button.button.amount__button(type="button")
+            | Add to cart

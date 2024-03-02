@@ -1,0 +1,21 @@
+.table {
+  margin-bottom: 50px;
+  color: var(--color-text-quaternary);
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+    & th {
+      font-family: var(--second-family);
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    column-gap: 60px;
+  }
+}
