@@ -1,11 +1,16 @@
 .envelope {
-  padding-block: var(--1280_50-990_30);
+  padding-block: var(--1280_50-320_20);
   background-color: var(--color-background-quaternary);
 
   &__content {
     display: flex;
     justify-content: space-between;
-    column-gap: 60px;
+    column-gap: var(--1280_60-390_25);
+  }
+
+  &__img {
+    width: min(50%, 610px);
+    object-fit: cover;
   }
 
   &__block {
@@ -21,13 +26,13 @@
 
   &__title {
     margin-bottom: 15px;
-    font-size: 36px;
+    font-size: var(--1280_36-320_24);
   }
 
   &__subtitle {
     display: inline-block;
-    margin-bottom: 50px;
-    font-size: 24px;
+    margin-bottom: var(--1280_50-320_20);
+    font-size: var(--1280_24-320_20);
   }
 
   &__main {
@@ -46,7 +51,7 @@
 
   &__list {
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: var(--1280_50-320_20);
     padding-left: 25px;
     color: var(--color-text-quinary);
   }

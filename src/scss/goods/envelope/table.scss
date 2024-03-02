@@ -1,5 +1,5 @@
 .table {
-  margin-bottom: 50px;
+  margin-bottom: var(--1280_50-320_20);
   color: var(--color-text-quaternary);
 
   &__head {
@@ -16,6 +16,6 @@
 
   &__row {
     display: flex;
-    column-gap: 60px;
+    column-gap: var(--1280_60-390_25);
   }
 }

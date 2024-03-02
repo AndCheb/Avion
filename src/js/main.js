@@ -1,9 +1,11 @@
 import burger from './module/burger.js';
 import account from './module/account.js';
+import amount from './module/amount.js';
 import Swiper from 'swiper/bundle';
 
 burger();
 account();
+amount();
 
 const swiper = new Swiper('.collection__swiper', {
   slidesPerView: 'auto',

@@ -24,13 +24,13 @@ header.header
         .account__log
           form.account__login(action="#")
             label.account__label Login
-              input.account__name(type="text" minlength="3" maxlength="7")
+              input.account__name(type="text" name="login" maxlength="15")
             label.account__label Password
-              input.account__password(type="password")
+              input.account__password(type="password" name="password")
             button.account__enter(type="button") Log In
           form.account__logout.display-none(action="#")
             span.account__text
-            span.account__wallet Wallet: 1000$
+            span.account__wallet Wallet: 1000£
             button.account__exit(type="button") Log Uot
 
     include ./burger.pug
