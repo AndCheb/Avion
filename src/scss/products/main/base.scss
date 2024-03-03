@@ -1,0 +1,13 @@
+.main {
+  min-height: var(--1280_210-320_145);
+  background-image: url('./../img/background/title.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    padding-top: var(--1280_120-320_65);
+    font-size: var(--1280_36-320_24);
+    color: var(--color-text-primary);
+  }
+}
