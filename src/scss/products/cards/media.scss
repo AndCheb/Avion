@@ -1,0 +1,25 @@
+@media (max-width: 650px) {
+  .cards {
+    &__list {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 30px;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .cards {
+    padding-bottom: 30px;
+  }
+
+  .cards__list .collection__slide {
+    max-width: 47%;
+  }
+}
+
+@media (max-width: 395px) {
+  .cards__list .collection__slide {
+    min-width: 100%;
+  }
+}

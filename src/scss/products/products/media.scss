@@ -3,3 +3,19 @@
     background-color: transparent;
   }
 }
+
+@media (max-width: 750px) {
+  .products__date {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .products__sort {
+    column-gap: 10px;
+  }
+
+  .products__list.designer {
+    display: none;
+  }
+}

@@ -1,0 +1,22 @@
+.cards {
+  padding-bottom: 40px;
+
+  &__list {
+    display: flex;
+    column-gap: 20px;
+    padding-top: var(--1280_30-320_0);
+    padding-bottom: var(--1280_50-390_35);
+  }
+
+  &__name {
+    font-size: var(--1280_20-320_16);
+  }
+
+  &__price {
+    font-size: var(--1280_18-320_14);
+  }
+
+  &__img {
+    margin-bottom: var(--1280_25-320_15);
+  }
+}
