@@ -5,4 +5,50 @@ block page
 
   main.page__main
     section.shopping
-      div.wrapper 
+      div.wrapper
+
+        div.shopping__content
+
+          div.shopping__main
+            h2.shopping__title.title Product
+            h2.shopping__title.title Quantity
+            h2.shopping__title.title Total
+
+          article.shopping__goods
+            div.shopping__card
+              img(src="./../img/collection/vase.jpg", alt="Graystone vase" width="110" height="135")
+              h3.shopping__name Graystone vase
+              p.shopping__info A timeless ceramic vase with a tri color grey glaze.
+              span.shopping__price £85
+
+            div.amount__counter
+                button.amount__decrease(type="button") -
+                span.amount__total 1
+                button.amount__increase(type="button") +
+
+            span.shopping__total £85
+
+          article.shopping__goods
+            div.shopping__card
+              img(src="./../img/collection/vase3.jpg", alt="Graystone vase" width="110" height="135")
+              h3.shopping__name Basic white vase
+              p.shopping__info Beautiful and simple this is one for the classics collections
+              span.shopping__price £125
+
+            div.amount__counter
+                button.amount__decrease(type="button") -
+                span.amount__total 1
+                button.amount__increase(type="button") +
+
+            span.shopping__total £125
+
+          .shopping__result
+            p.shopping__taxes Taxes and shipping are calculated at checkout
+            span.shopping__subtotal Subtotal
+            span.shopping__count £210
+
+          button.shopping__chekcout.button(type="button") Go to checkout
+
+  include chunk/footer 
+
+
