@@ -1,4 +1,4 @@
-extend layout/goods
+extend layout/shopping
 
 block page
   include parts/header
@@ -21,10 +21,10 @@ block page
               p.shopping__info A timeless ceramic vase with a tri color grey glaze.
               span.shopping__price £85
 
-            div.amount__counter
-                button.amount__decrease(type="button") -
-                span.amount__total 1
-                button.amount__increase(type="button") +
+            div.shopping__counter
+                button.shopping__decrease(type="button") -
+                span.shopping__all 1
+                button.shopping__increase(type="button") +
 
             span.shopping__total £85
 
@@ -35,10 +35,10 @@ block page
               p.shopping__info Beautiful and simple this is one for the classics collections
               span.shopping__price £125
 
-            div.amount__counter
-                button.amount__decrease(type="button") -
-                span.amount__total 1
-                button.amount__increase(type="button") +
+            div.shopping__counter
+                button.shopping__decrease(shoppinge="button") -
+                span.shopping__all 1
+                button.shopping__increase(type="button") +
 
             span.shopping__total £125
 
@@ -49,6 +49,6 @@ block page
 
           button.shopping__chekcout.button(type="button") Go to checkout
 
-  include chunk/footer 
+  include chunk/footer
 
 
