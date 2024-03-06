@@ -1,0 +1,117 @@
+.shopping {
+  padding-block: var(--1280_85-320_30);
+  background-color: var(--color-background-quaternary);
+
+  &__content {
+    padding-block: var(--1280_70-320_0);
+    padding-inline: var(--1280_60-390_0);
+    background-color: var(--color-background-tertiary);
+  }
+
+  &__head {
+    display: none;
+    color: var(--color-text-quaternary);
+  }
+
+  &__main,
+  &__goods {
+    display: grid;
+    grid-template-columns: 1fr 240px 35px;
+  }
+
+  &__main {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--color-background-quaternary);
+  }
+
+  &__goods {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-size: 14px;
+    color: var(--color-text-quaternary);
+  }
+
+  &__card {
+    display: flex;
+    column-gap: 25px;
+    color: var(--color-text-quaternary);
+    overflow: hidden;
+  }
+
+  &__description {
+    max-width: 240px;
+  }
+
+  &__name {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  &__info {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  &__counter {
+    display: flex;
+    align-items: center;
+    width: 125px;
+    height: 45px;
+    background-color: var(--color-background-quaternary);
+  }
+
+  &__increase,
+  &__decrease {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: inherit;
+    text-transform: none;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__total {
+    padding-top: 10px;
+  }
+
+  &__result {
+    display: grid;
+    grid-template-columns: 1fr max-content max-content;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 16px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-background-quaternary);
+  }
+
+  &__taxes,
+  &__subtotal {
+    margin: 0;
+    font-size: 14px;
+    color: var(--color-accent-secondary);
+  }
+
+  &__subtotal {
+    font-size: 20px;
+  }
+
+  &__count {
+    color: var(--color-text-quaternary);
+    font-size: 24px;
+  }
+
+  &__chekcout {
+    display: block;
+    margin-left: auto;
+  }
+}

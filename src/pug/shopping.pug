@@ -9,17 +9,20 @@ block page
 
         div.shopping__content
 
+          h2.shopping__head.title Your shopping cart
+
           div.shopping__main
             h2.shopping__title.title Product
-            h2.shopping__title.title Quantity
+            h2.shopping__title.title.quantity Quantity
             h2.shopping__title.title Total
 
           article.shopping__goods
             div.shopping__card
               img(src="./../img/collection/vase.jpg", alt="Graystone vase" width="110" height="135")
-              h3.shopping__name Graystone vase
-              p.shopping__info A timeless ceramic vase with a tri color grey glaze.
-              span.shopping__price £85
+              div.shopping__description
+                h3.shopping__name.title Graystone vase
+                p.shopping__info A timeless ceramic vase with a tri color grey glaze.
+                span.shopping__price £85
 
             div.shopping__counter
                 button.shopping__decrease(type="button") -
@@ -31,9 +34,10 @@ block page
           article.shopping__goods
             div.shopping__card
               img(src="./../img/collection/vase3.jpg", alt="Graystone vase" width="110" height="135")
-              h3.shopping__name Basic white vase
-              p.shopping__info Beautiful and simple this is one for the classics collections
-              span.shopping__price £125
+              div.shopping__description
+                h3.shopping__name.title Basic white vase
+                p.shopping__info Beautiful and simple this is one for the classics collections
+                span.shopping__price £125
 
             div.shopping__counter
                 button.shopping__decrease(shoppinge="button") -
