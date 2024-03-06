@@ -8,12 +8,14 @@
   --blue-dark: #2a254b;
   --light-gray-primary: #f9f9f9;
   --light-gray-secondary: #ececec;
+  --light-gray-tertiary: #ebe8f4;
   --gray: #505977;
   --deep-blue: #22202e;
   --light-lilac: #726e8d;
   --fog: rgba(249, 249, 249, 0.15);
   --white: #fff;
   --yellow-dark: #d5a962;
+  --blue: #4e4d93;
 
   --color-background-primary: var(--blue-dark);
   --color-background-secondary: var(--fog);
@@ -26,6 +28,8 @@
   --color-text-quaternary: var(--blue-dark);
   --color-text-quinary: var(--gray);
   --color-accent-primary: var(--yellow-dark);
+  --color-accent-secondary: var(--blue);
+  --color-accent-tertiary: var(--light-gray-tertiary);
 
   --1280_305-320_230: clamp(14.375rem, 12.813rem + 7.81vw, 19.063rem);
   --1280_210-320_145: clamp(9.063rem, 7.708rem + 6.77vw, 13.125rem);
@@ -34,7 +38,9 @@
   --1280_120-320_65: clamp(4.063rem, 2.917rem + 5.73vw, 7.5rem);
   --1280_100-320_25: clamp(1.563rem, 7.81vw, 6.25rem);
   --1280_85-320_30: clamp(1.875rem, 0.729rem + 5.73vw, 5.313rem);
+  --1280_70-320_0: clamp(0rem, -1.458rem + 7.29vw, 4.375rem);
   --1280_60-390_25: clamp(1.563rem, 0.604rem + 3.93vw, 3.75rem);
+  --1280_60-390_0: clamp(0rem, -1.25rem + 6.25vw, 3.75rem);
   --1280_50-390_35: clamp(2.188rem, 1.777rem + 1.69vw, 3.125rem);
   --1280_50-990_30: clamp(1.875rem, -2.392rem + 6.9vw, 3.125rem);
   --1280_50-320_20: clamp(1.25rem, 0.625rem + 3.13vw, 3.125rem);
