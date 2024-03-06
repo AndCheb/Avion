@@ -5,7 +5,7 @@ header.header
 
       form.header__form(action="#")
         label.header__label(for="list")
-        input.header__search(list="goods" id="list" aria-label="Search goods.")
+        input.header__search(list="goods" id="list"  name="search" aria-label="Search goods.")
 
         datalist.header__datalist(id="goods")
           option(value="Ceramics")
@@ -25,9 +25,9 @@ header.header
         .account__log
           form.account__login(action="#")
             label.account__label Login
-              input.account__name(type="text" minlength="3" maxlength="7")
+              input.account__name(type="text"  name="account" minlength="3" maxlength="7")
             label.account__label Password
-              input.account__password(type="password")
+              input.account__password(type="password"  name="password")
             button.account__enter(type="button") Log In
           form.account__logout.display-none(action="#")
             span.account__text
