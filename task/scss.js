@@ -10,7 +10,7 @@ import csso from 'gulp-csso';
 import rename from 'gulp-rename';
 import shortHand from 'gulp-shorthand';
 import groupCssMediaQueries from 'gulp-group-css-media-queries';
-import dartSass from 'sass';
+import * as dartSass from 'sass';
 import sass from 'gulp-sass';
 import gulpIf from 'gulp-if';
 import webpCss from 'gulp-webp-css';
@@ -32,7 +32,6 @@ export default () => {
       )
       .pipe(scss())
       .pipe(gulpIf(app.isProd, autoprefixer()))
-      .pipe(gulpIf(app.isProd, webpCss()))
       .pipe(groupCssMediaQueries())
       .pipe(gulpIf(app.isProd, dest(path.scss.dest)))
       .pipe(gulpIf(app.isProd, shortHand()))

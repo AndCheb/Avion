@@ -21,7 +21,7 @@ export default () => {
         })),
       })
     )
-    .pipe(webpHtml())
+    // .pipe(webpHtml())
     .pipe(typograf(app.typograf))
     .pipe(htmlmin(app.htmlmin))
     .pipe(dest(path.html.dest));

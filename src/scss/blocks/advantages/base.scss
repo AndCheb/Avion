@@ -16,6 +16,34 @@
     list-style-type: none;
   }
 
+  &__item:first-child {
+    background-image: url('./../img/svg/delivery.svg');
+    background-repeat: no-repeat;
+    background-position: var(--1280_50-990_30) 50px;
+    background-size: 24px 24px;
+  }
+
+  &__item:nth-child(2) {
+    background-image: url('./../img/svg/checkmark.svg');
+    background-repeat: no-repeat;
+    background-position: var(--1280_50-990_30) 50px;
+    background-size: 24px 24px;
+  }
+
+  &__item:nth-child(3) {
+    background-image: url('./../img/svg/purchase.svg');
+    background-repeat: no-repeat;
+    background-position: var(--1280_50-990_30) 50px;
+    background-size: 24px 24px;
+  }
+
+  &__item:nth-child(4) {
+    background-image: url('./../img/svg/cart.svg');
+    background-repeat: no-repeat;
+    background-position: var(--1280_50-990_30) 50px;
+    background-size: 24px 24px;
+  }
+
   &__item {
     flex-grow: 1;
     flex-shrink: 1;
@@ -23,25 +51,6 @@
     padding-top: 85px;
     max-width: 305px;
     background-color: var(--color-background-quaternary);
-    background-repeat: no-repeat;
-    background-position: var(--1280_50-990_30) 50px;
-    background-size: 24px 24px;
-  }
-
-  &__item:first-child {
-    background-image: url('./../img/svg/delivery.svg');
-  }
-
-  &__item:nth-child(2) {
-    background-image: url('./../img/svg/checkmark.svg');
-  }
-
-  &__item:nth-child(3) {
-    background-image: url('./../img/svg/purchase.svg');
-  }
-
-  &__item:nth-child(4) {
-    background-image: url('./../img/svg/cart.svg');
   }
 
   &__head {
