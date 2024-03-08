@@ -16,6 +16,9 @@
 
     &--active {
       background-image: url('./../img/svg/active.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 16px 16px;
     }
   }
 
